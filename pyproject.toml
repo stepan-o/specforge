@@ -1,0 +1,22 @@
+[project]
+name = "specforge"
+version = "0.1.0"
+description = "Grounding + guardrails + reports for OpenSpec-driven development"
+readme = "README.md"
+authors = [
+    { name = "stepan-o", email = "stepanoskin007@gmail.com" }
+]
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "typer>=0.21.1",
+]
+
+[project.scripts]
+specforge = "specforge.cli.main:app"
+
+[build-system]
+requires = ["uv_build>=0.9.7,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.uv.workspace]
+members = ["packages/*"]
