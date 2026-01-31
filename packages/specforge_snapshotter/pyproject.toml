@@ -1,16 +1,16 @@
 [project]
-name = "specforge-snapshotter"
+name = "snapshotter"
 version = "0.1.0"
-description = "Add your description here"
+description = "Snapshotter package for SpecForge (LangGraph-based repo snapshot artifacts)"
 readme = "README.md"
-authors = [
-    { name = "stepan-o", email = "stepanoskin007@gmail.com" }
-]
 requires-python = ">=3.11,<3.13"
-dependencies = []
+authors = [{ name = "stepan-o", email = "stepanoskin007@gmail.com" }]
+dependencies = [
+    # Add real deps after migration (langgraph, httpx/openai client, boto3, pydantic, etc.)
+]
 
 [project.scripts]
-specforge-snapshotter = "specforge_snapshotter:main"
+snapshotter = "snapshotter:main"
 
 [build-system]
 requires = ["uv_build>=0.9.7,<0.10.0"]
