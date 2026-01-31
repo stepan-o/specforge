@@ -60,6 +60,9 @@ venv/
 # uv cache
 .uv_cache/
 
+# uv lockfile (do not commit lockfiles for libraries)
+uv.lock
+
 # Jupyter
 .ipynb_checkpoints/
 
@@ -95,8 +98,12 @@ Thumbs.db
 # Local overrides
 *.local.*
 
-# Optional: pyenv version file (keep tracked by default)
-# .python-version
+# pyenv version file (developer local)
+.python-version
 
 # Tool outputs (local only)
 .output.txt
+
+# Snapshotter runtime artifacts
+out/
+.snapshotter_tmp/
